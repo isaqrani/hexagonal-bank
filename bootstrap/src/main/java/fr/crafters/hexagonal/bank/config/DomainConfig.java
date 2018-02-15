@@ -1,9 +1,15 @@
 package fr.crafters.hexagonal.bank.config;
 
+import fr.crafters.hexagonal.bank.domain.AccountService;
+import fr.crafters.hexagonal.bank.infrastructure.database.JpaAccountRepository;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DomainConfig {
 
-    // TODO STEP 7 - Because domain services doesn't have any spring annotation
+    @Bean
+    public AccountService accountService(JpaAccountRepository accountRepository) {
+        return new AccountService(accountRepository);
+    }
 }

@@ -1,8 +1,6 @@
 package fr.crafters.hexagonal.bank.acceptance;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
