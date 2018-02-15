@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hexagonal-bank
+
+# TODO STEP 8 - Maybe you need a database definition here
